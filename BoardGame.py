@@ -71,7 +71,7 @@ def move_player(game_state):
     print(f"\n{current_player} rolled a {roll} and moved to position {new_pos}.")
     check_event(game_state, current_player)
     if new_pos >= 30:
-        print(f"\n{current_player} wins the game!")
+        print(f"\n{current_player} has conquered all, nothing remains.")
         return game_state, True
     switch_turn(game_state)
     return game_state, False
