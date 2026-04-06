@@ -4,7 +4,7 @@
 
 import random
 
- """Reads game data from a file and returns it as a list."""
+# """Reads game data from a file and returns it as a list."""
 def load_game_data(filename):
     game_state = {"turn": "Player1", "players": {}, "events": {}}
     with open(filename, "r") as file:
@@ -61,7 +61,7 @@ def switch_turn(game_state):
     idx = players.index(current)
     game_state["turn"] = players[(idx + 1) % len(players)]
     
- def move_player(game_state):
+def move_player(game_state):
     current_player = game_state["turn"]
     roll = random.randint(1, 6)
     new_pos = game_state["players"][current_player] + roll
