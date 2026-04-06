@@ -1,7 +1,10 @@
 Turn: Player1
-3: Player1
-7: Player2
+1: Player1
+1: Player2
+5: Trap
 12: Treasure
+15: Heal
 18: Trap
-22: Player3
+22: Treasure
 27: Heal
+29: Trap
